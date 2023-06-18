@@ -27,66 +27,42 @@ and new and modified files will be stored in cloud storage.
   **60000 = 1 minute**
   **3600000 = 1 hour**
   **86400000 = 24 hours / 1 day**
-  ```
-  timeinterval=3600000
-  sourcefolder=C:\Backup\PersonalStorageFiles
-  targetfolder=C:\User\Documents\Dropbox\upload
-  ```
+```
+timeinterval=3600000
+sourcefolder=C:\Backup\PersonalStorageFiles
+targetfolder=C:\User\Documents\Dropbox\upload
+```
 * **Important! Restart the service after every config file modification.**
 ![1](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/3cc1c43a-fe13-4935-adc5-45e9fa614573)
 * Check your log file for any error messages and new updates to see if everything works correctly.
   Example of an OK log file:
   
-  `
+```
   [OK] Service is started at 18/06/2023 16:29:54
-  
   [OK] Service default files created at 18/06/2023 16:29:54 in location C:\BackupStorageService\config.txt
-  
   [OK] Service settings set at 18/06/2023 16:29:54
-  
   [OK] Service Backup time interval: 10000
-  
   [OK] Service source path: C:\source_folder_not_set
-  
   [OK] Service target path: C:\source_folder_not_set
-  
   [OK] First backup on service running started at 18/06/2023 16:29:54
-  
   [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
-  
   [ERROR] Backup faild at 18/06/2023 16:29:54, Backup number: 0
-  
   [OK] Backup started at 18/06/2023 16:30:04
-  
   [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
-  
   [ERROR] Backup faild at 18/06/2023 16:30:04, Backup number: 0
-  
   [OK] Service is stoped at 18/06/2023 16:32:19
-  
   [OK] Service is started at 18/06/2023 16:32:21
-  
   [OK] Service settings set at 18/06/2023 16:32:21
-  
   [OK] Service Backup time interval: 10000
-  
   [OK] Service source path: C:\one
-  
   [OK] Service target path: C:\otwo
-  
   [OK] First backup on service running started at 18/06/2023 16:32:21
-  
   [OK][COPY] First copy of file source name: test.txt, copy to C:\otwo\test.txt
-  
   [OK] Backup ended at 18/06/2023 16:32:21, Backup number: 1
-  
   [OK] Backup started at 18/06/2023 16:32:31
-  
   [OK][UPDATE] File source name: test.txt, copy to C:\otwo\test.txt
-  
-  [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2
-  
-  `
+  [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2  
+```
 * It's recommended that if you plan to backup large file sizes, you increase the time interval.
   to give enough time for files to copy and not put too much work on disk.
 ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
