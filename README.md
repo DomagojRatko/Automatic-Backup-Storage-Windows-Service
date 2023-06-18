@@ -73,6 +73,7 @@ targetfolder=C:\User\Documents\Dropbox\upload
   [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2  
 ```
 * It's recommended that if you plan to backup large file sizes, you increase the time interval to give enough time for files to copy and not put too much work on disk.
+
 ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
 
 ** How to uninstall service.
