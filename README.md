@@ -84,6 +84,7 @@ and new and modified files will be stored in cloud storage.
   [OK][UPDATE] File source name: test.txt, copy to C:\otwo\test.txt
   
   [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2
+  
   ```
 * It's recommended that if you plan to backup large file sizes, you increase the time interval.
   to give enough time for files to copy and not put too much work on disk.
