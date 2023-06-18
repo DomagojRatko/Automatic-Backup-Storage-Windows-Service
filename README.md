@@ -43,7 +43,10 @@ targetfolder=C:\User\Documents\Dropbox\upload
 ```
 
 - **Important! Restart the service after every config file modification.**
-  - ![1](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/3cc1c43a-fe13-4935-adc5-45e9fa614573)
+ 
+ ![1](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/3cc1c43a-fe13-4935-adc5-45e9fa614573)
+ 
+ 
 - Check your log file for any error messages and new updates to see if everything works correctly.
   - Example of an OK log file:
 ```
@@ -74,7 +77,8 @@ targetfolder=C:\User\Documents\Dropbox\upload
 ```
 - It's recommended that if you plan to backup large file sizes, you increase the time interval to give enough time for files to copy and not put too much work on disk.
 
-  - ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
+![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
+
 
 ## How to uninstall service.
 - Run the command in the Command Prompt  `InstallUtil.exe -u PATH TO DOWNLOAD BackupStorageWinService.exe FILE` 
