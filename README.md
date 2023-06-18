@@ -21,7 +21,7 @@ That would mean that every time Windows boots up, a backup will be made on servi
 
 - Go locate in your Command Prompt directory, for example `C:\Windows\Microsoft.NET\Framework\v4.0.30319>` (Choose your last version; mine is v4.0.30319)
 
-- Run the command in the Command Prompt  `InstallUtil.exe /PATH/BackupStorageWinService.exe`
+- Run the command in the Command Prompt  `InstallUtil.exe %PATH%BackupStorageWinService.exe`
   - Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
 
 - After successfully installing the service, you can check to see if it is running in your Windows Service window.
@@ -54,11 +54,11 @@ targetfolder=C:\User\Documents\Dropbox\upload
   [OK] Service is started at 18/06/2023 16:29:54
   [OK] Service default files created at 18/06/2023 16:29:54 in location C:\BackupStorageService\config.txt
   [OK] Service settings set at 18/06/2023 16:29:54
-  [OK] Service Backup time interval: 10000
+  [OK] Service backup time interval: 10000
   [OK] Service source path: C:\source_folder_not_set
   [OK] Service target path: C:\source_folder_not_set
   [OK] First backup on service running started at 18/06/2023 16:29:54
-  [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
+  [ERROR] Source C:\source_folder_not_set and Target C:\target_folder_not_set directory path could not be found!
   [ERROR] Backup faild at 18/06/2023 16:29:54, Backup number: 0
   [OK] Backup started at 18/06/2023 16:30:04
   [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
@@ -82,7 +82,7 @@ targetfolder=C:\User\Documents\Dropbox\upload
 
 
 ## How to uninstall service.
-- Run the command in the Command Prompt  `InstallUtil.exe -u PATH TO DOWNLOAD BackupStorageWinService.exe FILE` 
+- Run the command in the Command Prompt  `InstallUtil.exe -u %PATH%BackupStorageWinService.exe ` 
   - Example: `InstallUtil.exe -u C:\Downloads\BackupStorageWinService.exe`
 
 ## If you have any problems or suggestions, feel free to contact me.
