@@ -83,6 +83,6 @@ targetfolder=C:\User\Documents\Dropbox\upload
 
 ## How to uninstall service.
 - Run the command in the Command Prompt  `InstallUtil.exe -u PATH TO DOWNLOAD BackupStorageWinService.exe FILE` 
-  - Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
+  - Example: `InstallUtil.exe -u C:\Downloads\BackupStorageWinService.exe`
 
 ## If you have any problems or suggestions, feel free to contact me.
