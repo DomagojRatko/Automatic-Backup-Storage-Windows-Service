@@ -38,28 +38,51 @@ and new and modified files will be stored in cloud storage.
   Example of an OK log file:
   ```
   [OK] Service is started at 18/06/2023 16:29:54
+  
   [OK] Service default files created at 18/06/2023 16:29:54 in location C:\BackupStorageService\config.txt
+  
   [OK] Service settings set at 18/06/2023 16:29:54
+  
   [OK] Service Backup time interval: 10000
+  
   [OK] Service source path: C:\source_folder_not_set
+  
   [OK] Service target path: C:\source_folder_not_set
+  
   [OK] First backup on service running started at 18/06/2023 16:29:54
+  
   [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
+  
   [ERROR] Backup faild at 18/06/2023 16:29:54, Backup number: 0
+  
   [OK] Backup started at 18/06/2023 16:30:04
+  
   [ERROR] Source C:\source_folder_not_set and Target C:\source_folder_not_set directory path could not be found!
+  
   [ERROR] Backup faild at 18/06/2023 16:30:04, Backup number: 0
+  
   [OK] Service is stoped at 18/06/2023 16:32:19
+  
   [OK] Service is started at 18/06/2023 16:32:21
+  
   [OK] Service settings set at 18/06/2023 16:32:21
+  
   [OK] Service Backup time interval: 10000
+  
   [OK] Service source path: C:\one
+  
   [OK] Service target path: C:\otwo
+  
   [OK] First backup on service running started at 18/06/2023 16:32:21
+  
   [OK][COPY] First copy of file source name: test.txt, copy to C:\otwo\test.txt
+  
   [OK] Backup ended at 18/06/2023 16:32:21, Backup number: 1
+  
   [OK] Backup started at 18/06/2023 16:32:31
+  
   [OK][UPDATE] File source name: test.txt, copy to C:\otwo\test.txt
+  
   [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2
   ```
 * It's recommended that if you plan to backup large file sizes, you increase the time interval.
