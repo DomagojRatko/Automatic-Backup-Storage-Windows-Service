@@ -37,7 +37,7 @@ and new and modified files will be stored in cloud storage.
 * Check your log file for any error messages and new updates to see if everything works correctly.
   Example of an OK log file:
   
-  ```
+  `
   [OK] Service is started at 18/06/2023 16:29:54
   
   [OK] Service default files created at 18/06/2023 16:29:54 in location C:\BackupStorageService\config.txt
@@ -86,7 +86,7 @@ and new and modified files will be stored in cloud storage.
   
   [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2
   
-  ```
+  `
 * It's recommended that if you plan to backup large file sizes, you increase the time interval.
   to give enough time for files to copy and not put too much work on disk.
 ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
