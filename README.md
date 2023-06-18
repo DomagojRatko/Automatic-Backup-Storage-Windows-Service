@@ -15,37 +15,37 @@ Important to mention is that on every service run, Backup will be performed befo
 That would mean that every time Windows boots up, a backup will be made on service start.
 
 ## How to setup and use.
-* Download service file **[BackupStorageWinService.exe](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/blob/main/BackupStorageWinService.exe)**.
+- Download service file **[BackupStorageWinService.exe](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/blob/main/BackupStorageWinService.exe)**.
 
-* Open the Command Prompt as **Administrator**.
+- Open the Command Prompt as **Administrator**.
 
-* Go locate in your Command Prompt directory, for example "C:\Windows\Microsoft.NET\Framework\v4.0.30319>" (Choose your last version; mine is v4.0.30319)
+- Go locate in your Command Prompt directory, for example "C:\Windows\Microsoft.NET\Framework\v4.0.30319>" (Choose your last version; mine is v4.0.30319)
 
-* Run the command in the Command Prompt  `InstallUtil.exe PATH TO DOWNLOAD BackupStorageWinService.exe FILE`
-* Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
+- Run the command in the Command Prompt  `InstallUtil.exe PATH TO DOWNLOAD BackupStorageWinService.exe FILE`
+  - Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
 
-* After successfully installing the service, you can check to see if it is running in your Windows Service window.
-* Service name: Backup Storage Win Service
+- After successfully installing the service, you can check to see if it is running in your Windows Service window.
+  - Service name: Backup Storage Win Service
 
-* Open File Explorer and go to the directory `C:\BackupStorageService`
+- Open File Explorer and go to the directory `C:\BackupStorageService`
 
-* Open the config.txt file, set custom values, and save the file.
-- Example `config.txt` file.
-- **Attention! The time interval should not be less than 1000 and more than 2000000000**
-- **1000 = 1 second**
-- **60000 = 1 minute**
-- **3600000 = 1 hour**
-- **86400000 = 24 hours / 1 day**
+- Open the config.txt file, set custom values, and save the file.
+  - Example `config.txt` file.
+  - **Attention! The time interval should not be less than 1000 and more than 2000000000**
+  - **1000 = 1 second**
+  - **60000 = 1 minute**
+  - **3600000 = 1 hour**
+  - **86400000 = 24 hours / 1 day**
 ```
 timeinterval=3600000
 sourcefolder=C:\Backup\PersonalStorageFiles
 targetfolder=C:\User\Documents\Dropbox\upload
 ```
 
-* **Important! Restart the service after every config file modification.**
+- **Important! Restart the service after every config file modification.**
 ![1](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/3cc1c43a-fe13-4935-adc5-45e9fa614573)
-* Check your log file for any error messages and new updates to see if everything works correctly.
-- Example of an OK log file:
+- Check your log file for any error messages and new updates to see if everything works correctly.
+  - Example of an OK log file:
 ```
   [OK] Service is started at 18/06/2023 16:29:54
   [OK] Service default files created at 18/06/2023 16:29:54 in location C:\BackupStorageService\config.txt
