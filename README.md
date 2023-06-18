@@ -19,7 +19,7 @@ That would mean that every time Windows boots up, a backup will be made on servi
 
 - Open the Command Prompt as **Administrator**.
 
-- Go locate in your Command Prompt directory, for example "C:\Windows\Microsoft.NET\Framework\v4.0.30319>" (Choose your last version; mine is v4.0.30319)
+- Go locate in your Command Prompt directory, for example `C:\Windows\Microsoft.NET\Framework\v4.0.30319>` (Choose your last version; mine is v4.0.30319)
 
 - Run the command in the Command Prompt  `InstallUtil.exe PATH TO DOWNLOAD BackupStorageWinService.exe FILE`
   - Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
@@ -48,6 +48,7 @@ targetfolder=C:\User\Documents\Dropbox\upload
  
  
 - Check your log file for any error messages and new updates to see if everything works correctly.
+  - Log file location `C:\BackupStorageService\Logs` 
   - Example of an OK log file:
 ```
   [OK] Service is started at 18/06/2023 16:29:54
