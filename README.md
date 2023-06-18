@@ -32,7 +32,7 @@ and new and modified files will be stored in cloud storage.
   sourcefolder=C:\Backup\PersonalStorageFiles
   targetfolder=C:\User\Documents\Dropbox\upload
   ```
-* **Important! Restart the service after every config file modification**
+* **Important! Restart the service after every config file modification.**
 ![1](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/3cc1c43a-fe13-4935-adc5-45e9fa614573)
 * Check your log file for any error messages and new updates to see if everything works correctly.
   Example of an OK log file:
