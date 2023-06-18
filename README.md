@@ -11,6 +11,9 @@ After every custom time interval, source files will be copied and replaced in th
 Target directory can be a Dropbox folder that will automatically detect file changes, a backup will be made, 
 and new and modified files will be stored in cloud storage.
 
+Important to mention is that on every service run, Backup will be performed before the time interval starts.
+That would mean that every time Windows boots up, a backup will be made on service start.
+
 ## How to setup and use.
 * Download service file **[BackupStorageWinService.exe](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/blob/main/BackupStorageWinService.exe)**.
 
@@ -69,8 +72,11 @@ targetfolder=C:\User\Documents\Dropbox\upload
   [OK][UPDATE] File source name: test.txt, copy to C:\otwo\test.txt
   [OK] Backup ended at 18/06/2023 16:32:31, Backup number: 2  
 ```
-* It's recommended that if you plan to backup large file sizes, you increase the time interval.
-to give enough time for files to copy and not put too much work on disk.
+* It's recommended that if you plan to backup large file sizes, you increase the time interval to give enough time for files to copy and not put too much work on disk.
 ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
 
-* If you have any problems or suggestions, feel free to contact me.
+** How to uninstall service.
+* Run the command in the Command Prompt  `InstallUtil.exe -u PATH TO DOWNLOAD BackupStorageWinService.exe FILE` 
+- Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
+
+** If you have any problems or suggestions, feel free to contact me.
