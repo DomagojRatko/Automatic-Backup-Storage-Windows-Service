@@ -17,7 +17,7 @@ That would mean that every time Windows boots up, a backup will be made on servi
 ## How to setup and use.
 * Download service file **[BackupStorageWinService.exe](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/blob/main/BackupStorageWinService.exe)**.
 
-* Open the Command Prompt as **Administrator!**.
+* Open the Command Prompt as **Administrator**.
 
 * Go locate in your Command Prompt directory, for example "C:\Windows\Microsoft.NET\Framework\v4.0.30319>" (Choose your last version; mine is v4.0.30319)
 
