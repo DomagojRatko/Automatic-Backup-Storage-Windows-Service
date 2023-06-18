@@ -76,8 +76,8 @@ targetfolder=C:\User\Documents\Dropbox\upload
 
 ![2](https://github.com/DomagojRatko/Automatic-Backup-Storage-Windows-Service/assets/62218857/2aafdf61-4f17-48e6-92c0-18969443244a)
 
-** How to uninstall service.
+## How to uninstall service.
 * Run the command in the Command Prompt  `InstallUtil.exe -u PATH TO DOWNLOAD BackupStorageWinService.exe FILE` 
 - Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
 
-** If you have any problems or suggestions, feel free to contact me.
+## If you have any problems or suggestions, feel free to contact me.
