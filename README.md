@@ -22,10 +22,10 @@ That would mean that every time Windows boots up, a backup will be made on servi
 * Go locate in your Command Prompt directory, for example "C:\Windows\Microsoft.NET\Framework\v4.0.30319>" (Choose your last version; mine is v4.0.30319)
 
 * Run the command in the Command Prompt  `InstallUtil.exe PATH TO DOWNLOAD BackupStorageWinService.exe FILE`
-- Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
+-- Example: `InstallUtil.exe C:\Downloads\BackupStorageWinService.exe`
 
 * After successfully installing the service, you can check to see if it is running in your Windows Service window.
-- Service name: Backup Storage Win Service
+-- Service name: Backup Storage Win Service
 
 * Open File Explorer and go to the directory `C:\BackupStorageService`
 
